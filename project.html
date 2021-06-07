@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>cs faculty </title>
+
+    <!-- google fonts cdn link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font size awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="demo2.css">
+    <<style >
+
+table {width : 80%; border-collapse : collapse;}
+td {color : black ; text-align : center;}
+th {color : orange ; text-align : center;}
+
+</style>-->
+<link rel = "stylesheet" href = "styles.css"/>
+
+</head>
+<body>
+<!-- header section starts here -->
+<header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <a href="#" class ="logo"><i class="fas fa-user-graduate"></i>CIS FACULTY</a>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#course">Events</a></li>
+            <li><a href="#teacher">courses</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="login" class="fas fa-user-circle"></div>
+
+
+
+</header>
+
+<!-- header section ends here -->
+
+<!-- login form -->
+
+<div class="login-form">
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" placeholder="username" class="box">
+        <input type="password" placeholder="password" class="box">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+        <input type="submit" class="btn" value="login">
+        <i class="fas fa-times"></i>
+    </form>
+
+</div>
+
+<!-- home section starts -->
+
+<section class="home" id="home">
+
+    <h2>CIS MEANS SUCCESS</h2>
+    <p> since 1980</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://centuryunderwriting.co.uk/wp-content/uploads/2019/10/welcome-graphic.jpg" style="width:80%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sbGVnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" style="width:80%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_513881682_2000124120009280226_343051.jpg" style="width:80%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYcgLDR4XAWtQOE6zZJ8-TlXyYLEme9s_dg&usqp=CAU" alt="">
+    </div>
+
+    <div class="content">
+        <h3>why choose us?</h3>
+        <p>A large diverse student body</p>
+        <p>More choices of majors and specializations</p>
+        <p>More networking opportunities to help land internships and jobs</p>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- course section starts -->
+
+ <section class="course" id="course">
+
+ <h1 class="heading">our Trips & Events</h1>
+
+ <div class="box-container">
+
+        <div class="box">
+            <img src="https://i2.wp.com/thewandererpharaoh.com/wp-content/uploads/2020/08/2-Days-in-Alexandria-Egypt-Things-To-Do-and-Places-To-by-Flo-P-on-Unsplash-2-3.jpg?resize=840%2C560&ssl=1&is-pending-load=1" alt="">
+            <h3 class="price"></h3>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <a href="#" class="title">Trip to Alexandria 4 nights for 300 L.E</a>
+
+                <div class="info">
+
+                    <h3> <i class="far fa-calendar-alt"></i> date 15-6 </h3>
+
+                </div>
+            </div>
+        </div>
+         <div class="box">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/19/48/b3/4b/continental-hotel-hurghada.jpg" alt="">
+            <h3 class="price"> </h3>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <a href="#" class="title">Trip to Hurghada 3 nights for 500 L.E</a>
+
+                <div class="info">
+                    <h3> <i class="far fa-calendar-alt"></i> Date 2-7</h3>
+
+                </div>
+            </div>
+        </div>
+         <div class="box">
+            <img src="https://i.pinimg.com/originals/a3/36/99/a33699d850ec3131f01624c1ff219e47.jpg" alt="">
+
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <a href="#" class="title">Trip to luxor and Aswan 10 nights fo 1500 L.E</a>
+
+                <div class="info">
+                    <h3> <i class="far fa-calendar-alt"></i> date 16-7 </h3>
+
+                </div>
+            </div>
+        </div>
+         <div class="box">
+            <img src="https://scgnonprofits.com/wp-content/uploads/2012/08/Microphone-Stage-Fright-184917279_3008x2000-e1523403062895.jpeg" alt="">
+
+            <div class="content">
+
+                <a href="#" class="title">Youth forum</a>
+                <p>Express yourself</p>
+                <div class="info">
+                    <h3> <i class="far fa-calendar-alt"></i> date:18-7 </h3>
+
+                </div>
+            </div>
+        </div>
+         <div class="box">
+            <img src="https://previews.123rf.com/images/duug/duug1206/duug120600003/13966994-sport-logo.jpg" alt="">
+            <div class="content">
+
+                <a href="#" class="title">spots Tournament</a>
+                <p>participate now</p>
+                <div class="info">
+
+                    <h3> <i class="far fa-calendar-alt"></i> starting from 19/7 to 1/8 </h3>
+                </div>
+            </div>
+        </div>
+         <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR63oFIgUjLSmDWa1UoNK_2ZayIv2af_74aTQ&usqp=CAU" alt="">
+
+            <div class="content">
+
+                <a href="#" class="title">Google Internships </a>
+                <p>Apply Now</p>
+                <div class="info">
+
+                    <h3> <i class="far fa-calendar-alt"></i> During Summer Vacation </h3>
+
+                </div>
+            </div>
+        </div>
+ </div>
+
+</section>
+
+<!-- course section ends -->
+
+<!-- teacher section starts -->
+
+<section class="teacher" id="teacher">
+
+
+    <h1 class="heading"><u> professors </u></h1>
+
+<ol>
+    <li>Cs:</li>
+    <ul>
+        <li> H.Abdelmeged</li>
+        <li>A.Ghonim</li>
+        <li>M.Saieed</li>
+    </ul>
+    <li>Networks:</li>
+    <ul>
+        <li>M.Wadee</li>
+        <li>M.Maarie</li>
+    </ul>
+    <li>Electronics:</li>
+    <ul>
+        <li>E.Shafei</li>
+        <li>A.Abdelrahman</li>
+    </ul>
+    <li>Math:</li>
+    <ul>
+        <li>E.Fathy</li>
+        <li>A.Ismail</li>
+    </ul>
+</ol>
+
+
+
+
+<table border= "1px solid black">
+<tr>
+<th> courses </th>
+<th> Houres </th>
+<th> Academic year </th>
+</tr>
+
+<tr>
+<td> Electronics </td>
+<td> 2 hr </td>
+<td> 1st year </td>
+</tr>
+
+<tr>
+<td> Networks </td>
+<td> 3 hr </td>
+<td> 3rd year </td>
+</tr>
+
+<tr>
+<td> Math3 </td>
+<td> 3 hr </td>
+<td> 2nd year </td>
+</tr>
+
+<tr>
+<td> data science </td>
+<td> 3 hr </td>
+<td> 4th year </td>
+</tr>
+
+</table>
+
+
+
+
+
+
+</section>
+
+<!-- teacher section ends -->
+
+<!-- contact section starts -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading">contact us</h1>
+
+<div class="row">
+
+    <form action="">
+        <input type="text" placeholder="full name" class="box">
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <input type="number" placeholder="your number" class="box">
+        <textarea name="" id="" cols="30" rows="10" class="box address" placeholder="your address"></textarea>
+        <input type="submit" class="btn" value="send now">
+    </form>
+
+    <div class="image">
+        <img src="images/contact-img.png" alt="">
+    </div>
+
+</div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts -->
+
+<div class="footer">
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> location</h3>
+            <a href="#">Cairo,Egypt</a>
+
+        </div>
+
+
+        <div class="box">
+            <h3>contact numbers</h3>
+
+
+            <p> <i class="fas fa-phone"></i>  phone:01077958939966 </p>
+        </div>
+
+    </div>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+
+    <h1 class="credit">created by <a href="#">Malak Rasmy & Salma Tarek</a>
+
+
+</div>
+
+<!-- footer section ends -->
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#teacher">Course</a>
+    <a href="index.html#course">events</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+
+
+<!-- jquery cdn link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- custom css file link -->
+<script src="p2.js"></script>
+
+</body>
+</html>
